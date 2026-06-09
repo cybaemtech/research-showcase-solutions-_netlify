@@ -53,7 +53,7 @@ export const strategyHtml = String.raw`
 
 <div class="sw">
   <div class="lenses">
-    <span class="lens l1"><i class="ti ti-cpu" aria-hidden="true"></i> CTPO</span>
+    <span class="lens l1"><i class="ti ti-cpu" aria-hidden="true"></i> Tech & Product</span>
     <span class="lens l2"><i class="ti ti-chess" aria-hidden="true"></i> Strategist</span>
     <span class="lens l3"><i class="ti ti-map-pin" aria-hidden="true"></i> Local Marketing</span>
     <span class="lens l4"><i class="ti ti-speakerphone" aria-hidden="true"></i> Digital Marketing</span>
