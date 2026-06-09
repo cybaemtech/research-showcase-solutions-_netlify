@@ -148,7 +148,7 @@ export const strategyHtml = String.raw`
       </div>
       <div class="expert-grid">
         <div class="expert-card">
-          <div class="expert-label el1"><span class="expert-dot ed1"></span> CTPO</div>
+          <div class="expert-label el1"><span class="expert-dot ed1"></span> Tech & Product</div>
           <div class="expert-text">Build a gifting configurator on the website — pick products, customise box, add name/message, checkout via UPI. Automated WhatsApp confirmation + tracking flow for corporate orders.</div>
         </div>
         <div class="expert-card">
@@ -205,7 +205,7 @@ export const strategyHtml = String.raw`
       </div>
       <div class="expert-grid">
         <div class="expert-card">
-          <div class="expert-label el1"><span class="expert-dot ed1"></span> CTPO</div>
+          <div class="expert-label el1"><span class="expert-dot ed1"></span> Tech & Product</div>
           <div class="expert-text">Build an AI-powered content repurposing pipeline — one Reel script becomes a blog post, 3 WhatsApp messages &amp; a YouTube Short automatically. Maximise Dr.'s limited time with zero content waste.</div>
         </div>
         <div class="expert-card">
