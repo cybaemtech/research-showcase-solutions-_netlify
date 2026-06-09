@@ -53,7 +53,7 @@ export const strategyHtml = String.raw`
 
 <div class="sw">
   <div class="lenses">
-    <span class="lens l1"><i class="ti ti-cpu" aria-hidden="true"></i> CTPO</span>
+    <span class="lens l1"><i class="ti ti-cpu" aria-hidden="true"></i> Tech & Product</span>
     <span class="lens l2"><i class="ti ti-chess" aria-hidden="true"></i> Strategist</span>
     <span class="lens l3"><i class="ti ti-map-pin" aria-hidden="true"></i> Local Marketing</span>
     <span class="lens l4"><i class="ti ti-speakerphone" aria-hidden="true"></i> Digital Marketing</span>
@@ -91,7 +91,7 @@ export const strategyHtml = String.raw`
       </div>
       <div class="expert-grid">
         <div class="expert-card">
-          <div class="expert-label el1"><span class="expert-dot ed1"></span> CTPO</div>
+          <div class="expert-label el1"><span class="expert-dot ed1"></span> Tech & Product</div>
           <div class="expert-text">Build a lightweight WhatsApp CRM (Google Sheet + automation) to track every past recipient. AI-assisted follow-up messages personalised by product gifted.</div>
         </div>
         <div class="expert-card">
@@ -148,7 +148,7 @@ export const strategyHtml = String.raw`
       </div>
       <div class="expert-grid">
         <div class="expert-card">
-          <div class="expert-label el1"><span class="expert-dot ed1"></span> CTPO</div>
+          <div class="expert-label el1"><span class="expert-dot ed1"></span> Tech & Product</div>
           <div class="expert-text">Build a gifting configurator on the website — pick products, customise box, add name/message, checkout via UPI. Automated WhatsApp confirmation + tracking flow for corporate orders.</div>
         </div>
         <div class="expert-card">
@@ -205,7 +205,7 @@ export const strategyHtml = String.raw`
       </div>
       <div class="expert-grid">
         <div class="expert-card">
-          <div class="expert-label el1"><span class="expert-dot ed1"></span> CTPO</div>
+          <div class="expert-label el1"><span class="expert-dot ed1"></span> Tech & Product</div>
           <div class="expert-text">Build an AI-powered content repurposing pipeline — one Reel script becomes a blog post, 3 WhatsApp messages &amp; a YouTube Short automatically. Maximise Dr.'s limited time with zero content waste.</div>
         </div>
         <div class="expert-card">
