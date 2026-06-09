@@ -9,7 +9,7 @@ export const Route = createFileRoute("/case/strategy")({
       { title: "6-Month Brand Launch Strategy — SveeraAyurveda · Cybaem Research" },
       { name: "description", content: "Three lensed launch strategies for an Ayurvedic personal-care brand — phased across foundation, activation and scale." },
       { property: "og:title", content: "6-Month Brand Launch Strategy — SveeraAyurveda" },
-      { property: "og:description", content: "Trust-to-Transaction, Festival Flywheel, and Ayurvedacharya Brand Authority — across CTPO, Strategist, Local and Digital lenses." },
+      { property: "og:description", content: "Trust-to-Transaction, Festival Flywheel, and Ayurvedacharya Brand Authority — across Tech & Product, Strategist, Local and Digital lenses." },
     ],
   }),
   component: Page,
