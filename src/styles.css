@@ -1,6 +1,8 @@
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
+@import url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css");
+
 
 @custom-variant dark (&:is(.dark *));
 
@@ -142,3 +144,21 @@
     color: var(--color-foreground);
   }
 }
+
+/* Report container — provides the CSS variables that the embedded report HTML expects */
+.report-surface {
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f7f6f1;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #4a4a4a;
+  --color-text-tertiary: #8a8a8a;
+  --color-border-tertiary: #e6e3dc;
+  --border-radius-md: 6px;
+  --border-radius-lg: 10px;
+  color: var(--color-text-secondary);
+}
+.report-surface .sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+.report-surface i.ti { display: inline-block; vertical-align: -2px; }

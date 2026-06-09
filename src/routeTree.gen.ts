@@ -10,33 +10,89 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CaseTeamFocusRouteImport } from './routes/case.team-focus'
+import { Route as CaseStrategyRouteImport } from './routes/case.strategy'
+import { Route as CaseFestivalCalendarRouteImport } from './routes/case.festival-calendar'
+import { Route as CaseEngagementModelRouteImport } from './routes/case.engagement-model'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CaseTeamFocusRoute = CaseTeamFocusRouteImport.update({
+  id: '/case/team-focus',
+  path: '/case/team-focus',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CaseStrategyRoute = CaseStrategyRouteImport.update({
+  id: '/case/strategy',
+  path: '/case/strategy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CaseFestivalCalendarRoute = CaseFestivalCalendarRouteImport.update({
+  id: '/case/festival-calendar',
+  path: '/case/festival-calendar',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CaseEngagementModelRoute = CaseEngagementModelRouteImport.update({
+  id: '/case/engagement-model',
+  path: '/case/engagement-model',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/case/engagement-model': typeof CaseEngagementModelRoute
+  '/case/festival-calendar': typeof CaseFestivalCalendarRoute
+  '/case/strategy': typeof CaseStrategyRoute
+  '/case/team-focus': typeof CaseTeamFocusRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/case/engagement-model': typeof CaseEngagementModelRoute
+  '/case/festival-calendar': typeof CaseFestivalCalendarRoute
+  '/case/strategy': typeof CaseStrategyRoute
+  '/case/team-focus': typeof CaseTeamFocusRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/case/engagement-model': typeof CaseEngagementModelRoute
+  '/case/festival-calendar': typeof CaseFestivalCalendarRoute
+  '/case/strategy': typeof CaseStrategyRoute
+  '/case/team-focus': typeof CaseTeamFocusRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/case/engagement-model'
+    | '/case/festival-calendar'
+    | '/case/strategy'
+    | '/case/team-focus'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/case/engagement-model'
+    | '/case/festival-calendar'
+    | '/case/strategy'
+    | '/case/team-focus'
+  id:
+    | '__root__'
+    | '/'
+    | '/case/engagement-model'
+    | '/case/festival-calendar'
+    | '/case/strategy'
+    | '/case/team-focus'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CaseEngagementModelRoute: typeof CaseEngagementModelRoute
+  CaseFestivalCalendarRoute: typeof CaseFestivalCalendarRoute
+  CaseStrategyRoute: typeof CaseStrategyRoute
+  CaseTeamFocusRoute: typeof CaseTeamFocusRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,22 +104,44 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/case/team-focus': {
+      id: '/case/team-focus'
+      path: '/case/team-focus'
+      fullPath: '/case/team-focus'
+      preLoaderRoute: typeof CaseTeamFocusRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/case/strategy': {
+      id: '/case/strategy'
+      path: '/case/strategy'
+      fullPath: '/case/strategy'
+      preLoaderRoute: typeof CaseStrategyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/case/festival-calendar': {
+      id: '/case/festival-calendar'
+      path: '/case/festival-calendar'
+      fullPath: '/case/festival-calendar'
+      preLoaderRoute: typeof CaseFestivalCalendarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/case/engagement-model': {
+      id: '/case/engagement-model'
+      path: '/case/engagement-model'
+      fullPath: '/case/engagement-model'
+      preLoaderRoute: typeof CaseEngagementModelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CaseEngagementModelRoute: CaseEngagementModelRoute,
+  CaseFestivalCalendarRoute: CaseFestivalCalendarRoute,
+  CaseStrategyRoute: CaseStrategyRoute,
+  CaseTeamFocusRoute: CaseTeamFocusRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
