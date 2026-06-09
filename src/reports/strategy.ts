@@ -91,7 +91,7 @@ export const strategyHtml = String.raw`
       </div>
       <div class="expert-grid">
         <div class="expert-card">
-          <div class="expert-label el1"><span class="expert-dot ed1"></span> CTPO</div>
+          <div class="expert-label el1"><span class="expert-dot ed1"></span> Tech & Product</div>
           <div class="expert-text">Build a lightweight WhatsApp CRM (Google Sheet + automation) to track every past recipient. AI-assisted follow-up messages personalised by product gifted.</div>
         </div>
         <div class="expert-card">
