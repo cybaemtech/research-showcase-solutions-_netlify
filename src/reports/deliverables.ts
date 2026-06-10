@@ -188,7 +188,7 @@ export const deliverablesHtml = String.raw`
 </div>
 
 <div class="tip">
-  <div class="tip-title">How to present to client — talking point</div>
+  <div class="tip-title">RESEARCH PER PRODUCT | GEOGRAPHIC AREA</div>
   <div class="tip-text">Show the reference brand's content <strong>structure and naming system</strong> — not the actual files. Say: "For a wellness brand in a similar category, we built 30+ pieces of content across this exact matrix — multiple languages, audience segments, and content types. Here are the first 4 pieces we've briefed for SveeraAyurveda using the same system. This is how we'll scale it over 6 months."</div>
 </div>
 
