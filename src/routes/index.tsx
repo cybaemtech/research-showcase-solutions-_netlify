@@ -43,6 +43,13 @@ const cases = [
     desc: "What each team builds week one — blog briefs, ad creatives, Reels series, keyword priorities and posting cadence.",
     tag: "SEO · Digital · Social",
   },
+  {
+    to: "/case/deliverables" as const,
+    eyebrow: "05 · Deliverables",
+    title: "Content Team Brief — First Drop",
+    desc: "Where strategy meets the cutting board. Three images and one reel briefed for SveeraAyurveda's first drop, mapped to our documented content system.",
+    tag: "Brief · Images · Reel",
+  },
 ];
 
 function Index() {
