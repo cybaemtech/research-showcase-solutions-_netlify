@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site-layout";
+import { SineWaveBg } from "@/components/sine-wave-bg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -47,7 +48,9 @@ const cases = [
 function Index() {
   return (
     <SiteLayout>
-      <section className="mx-auto max-w-6xl px-6 pt-20 pb-16">
+      <section className="relative overflow-hidden">
+        <SineWaveBg />
+        <div className="relative mx-auto max-w-6xl px-6 pt-20 pb-16">
         <div className="text-xs font-medium uppercase tracking-[0.25em] text-[#3B6D11]">
           Research-led growth studio
         </div>
@@ -73,6 +76,7 @@ function Index() {
           >
             How we work
           </a>
+        </div>
         </div>
       </section>
 
