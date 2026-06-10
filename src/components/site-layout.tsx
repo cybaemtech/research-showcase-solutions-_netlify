@@ -1,14 +1,14 @@
 import { Link } from "@tanstack/react-router";
 import type { ReactNode } from "react";
+import cybaemLogo from "@/assets/cybaem-tech-logo.png.asset.json";
 
 export function SiteLayout({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <Link to="/" className="flex items-center gap-2 font-semibold tracking-tight">
-            <span className="inline-block h-2.5 w-2.5 rounded-sm bg-[#3B6D11]" />
-            Cybaem Research
+          <Link to="/" className="flex items-center gap-2 font-semibold tracking-tight" aria-label="Cybaem Tech">
+            <img src={cybaemLogo.url} alt="Cybaem Tech" className="h-8 w-auto" />
           </Link>
           <nav className="flex items-center gap-6 text-sm text-muted-foreground">
             <Link to="/" className="hover:text-foreground">Home</Link>
