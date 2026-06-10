@@ -14,6 +14,7 @@ import { Route as CaseTeamFocusRouteImport } from './routes/case.team-focus'
 import { Route as CaseStrategyRouteImport } from './routes/case.strategy'
 import { Route as CaseFestivalCalendarRouteImport } from './routes/case.festival-calendar'
 import { Route as CaseEngagementModelRouteImport } from './routes/case.engagement-model'
+import { Route as CaseDeliverablesRouteImport } from './routes/case.deliverables'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -40,9 +41,15 @@ const CaseEngagementModelRoute = CaseEngagementModelRouteImport.update({
   path: '/case/engagement-model',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CaseDeliverablesRoute = CaseDeliverablesRouteImport.update({
+  id: '/case/deliverables',
+  path: '/case/deliverables',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/case/deliverables': typeof CaseDeliverablesRoute
   '/case/engagement-model': typeof CaseEngagementModelRoute
   '/case/festival-calendar': typeof CaseFestivalCalendarRoute
   '/case/strategy': typeof CaseStrategyRoute
@@ -50,6 +57,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/case/deliverables': typeof CaseDeliverablesRoute
   '/case/engagement-model': typeof CaseEngagementModelRoute
   '/case/festival-calendar': typeof CaseFestivalCalendarRoute
   '/case/strategy': typeof CaseStrategyRoute
@@ -58,6 +66,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/case/deliverables': typeof CaseDeliverablesRoute
   '/case/engagement-model': typeof CaseEngagementModelRoute
   '/case/festival-calendar': typeof CaseFestivalCalendarRoute
   '/case/strategy': typeof CaseStrategyRoute
@@ -67,6 +76,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/case/deliverables'
     | '/case/engagement-model'
     | '/case/festival-calendar'
     | '/case/strategy'
@@ -74,6 +84,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/case/deliverables'
     | '/case/engagement-model'
     | '/case/festival-calendar'
     | '/case/strategy'
@@ -81,6 +92,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/case/deliverables'
     | '/case/engagement-model'
     | '/case/festival-calendar'
     | '/case/strategy'
@@ -89,6 +101,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CaseDeliverablesRoute: typeof CaseDeliverablesRoute
   CaseEngagementModelRoute: typeof CaseEngagementModelRoute
   CaseFestivalCalendarRoute: typeof CaseFestivalCalendarRoute
   CaseStrategyRoute: typeof CaseStrategyRoute
@@ -132,11 +145,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CaseEngagementModelRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/case/deliverables': {
+      id: '/case/deliverables'
+      path: '/case/deliverables'
+      fullPath: '/case/deliverables'
+      preLoaderRoute: typeof CaseDeliverablesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CaseDeliverablesRoute: CaseDeliverablesRoute,
   CaseEngagementModelRoute: CaseEngagementModelRoute,
   CaseFestivalCalendarRoute: CaseFestivalCalendarRoute,
   CaseStrategyRoute: CaseStrategyRoute,

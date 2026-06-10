@@ -16,6 +16,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             <Link to="/case/festival-calendar" className="hover:text-foreground">Revenue Map</Link>
             <Link to="/case/engagement-model" className="hover:text-foreground">Engagement</Link>
             <Link to="/case/team-focus" className="hover:text-foreground">Execution</Link>
+            <Link to="/case/deliverables" className="hover:text-foreground">Deliverables</Link>
           </nav>
         </div>
       </header>
