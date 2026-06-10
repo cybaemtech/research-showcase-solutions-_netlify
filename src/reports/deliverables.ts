@@ -14,7 +14,7 @@ export const deliverablesHtml = String.raw`
     <div class="hdr-brand">Cybaem Tech · Content Team Brief</div>
     <div class="hdr-title">SveeraAyurveda — Content Brief</div>
     <div class="hdr-sub">3 Images + 1 Reel · First Content Drop · Brand Launch Phase</div>
-    <span class="badge">Internal · Do not share with client</span>
+    <span class="badge">DIGITAL CONTENT TEAM</span>
   </div>
   <div class="hdr-right">
     <div class="hdr-meta">Brand: <span>SveeraAyurveda</span></div>
