@@ -58,10 +58,7 @@ function Index() {
       <section className="relative overflow-hidden">
         <SineWaveBg />
         <div className="relative mx-auto max-w-6xl px-6 pt-20 pb-16">
-        <div className="text-sm font-semibold tracking-[0.15em] text-foreground uppercase">
-          Cybaem DIGI <span className="text-muted-foreground font-normal">— Powered by Cybaem Tech</span>
-        </div>
-        <div className="mt-2 text-xs font-medium uppercase tracking-[0.25em] text-[#3B6D11]">
+        <div className="text-xs font-medium uppercase tracking-[0.25em] text-[#3B6D11]">
           Research-led growth studio
         </div>
         <h1 className="mt-4 max-w-4xl text-4xl md:text-6xl font-semibold tracking-tight leading-[1.05]">
