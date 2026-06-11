@@ -60,6 +60,7 @@ export const festivalHtml = String.raw`
 .total-row td.rev-total { color: #D4EDBA !important; font-size: 14px; }
 </style>
 
+<style>.fw{zoom:1.45;}@media (max-width:768px){.fw{zoom:1.15;}}</style>
 <div class="fw">
 
   <div class="summary-bar">
