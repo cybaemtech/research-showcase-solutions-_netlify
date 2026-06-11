@@ -91,6 +91,7 @@ table.sc td:not(:first-child) { text-align: right; }
 .term-item strong { color: var(--color-text-primary); display: block; font-size: 11px; margin-bottom: 1px; }
 </style>
 
+<style>.hw{zoom:1.45;}@media (max-width:768px){.hw{zoom:1.15;}}</style>
 <div class="hw">
 
   <div class="model-label">Why a hybrid model is the right call</div>
