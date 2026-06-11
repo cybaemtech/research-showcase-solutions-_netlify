@@ -58,6 +58,7 @@ export const teamHtml = String.raw`
 .leg-dot { width: 7px; height: 7px; border-radius: 50%; }
 </style>
 
+<style>.wrap{zoom:1.45;}@media (max-width:768px){.wrap{zoom:1.15;}}</style>
 <div class="wrap">
 
   <div class="legend">
