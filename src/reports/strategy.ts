@@ -51,6 +51,7 @@ export const strategyHtml = String.raw`
 .kpi i { font-size: 13px; }
 </style>
 
+<style>.sw{zoom:1.45;}@media (max-width:768px){.sw{zoom:1.15;}}</style>
 <div class="sw">
   <div class="lenses">
     <span class="lens l1"><i class="ti ti-cpu" aria-hidden="true"></i> Tech & Product</span>
