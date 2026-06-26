@@ -7,7 +7,8 @@ function CountdownTimer() {
   useEffect(() => {
     const getNextSunday1159PM = () => {
       const now = new Date();
-      const daysUntilSunday = (7 - now.getDay()) % 7;
+      // Add 14 days (2 weeks) to the next Sunday
+      const daysUntilSunday = ((7 - now.getDay()) % 7) + 14;
       const target = new Date(now.getFullYear(), now.getMonth(), now.getDate() + daysUntilSunday);
       target.setHours(23, 59, 59, 999);
       return target.getTime();
